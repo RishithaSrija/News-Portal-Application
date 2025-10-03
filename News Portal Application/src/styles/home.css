@@ -1,0 +1,13 @@
+*{
+    background-color: #ffffff;
+}
+
+body {
+    
+  background-color: black;
+  color: rgb(230, 44, 44);
+  font-family: 'Arial';
+}
+h1, h2, h3 {
+  color: rgb(219, 49, 49);
+}

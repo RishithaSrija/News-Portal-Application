@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.signup-wrapper, .forgot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-y: auto;
+}
+
+
+.signup-card {
+    background-color: #111;
+    border: 2px solid red;
+    border-radius: 15px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0 0 20px red;
+    text-align: center;
+}
+
+.signup-card h2 {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.signup-sub {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.signup-card input[type="text"],
+.signup-card input[type="email"],
+.signup-card input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid red;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+
+.signup-card button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.signup-card button:hover {
+    background-color: white;
+    color: red;
+    box-shadow: 0 0 10px red;
+}
+
+.signup-card a {
+    color: white;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: inline-block;
+}
+.signup-card a:hover {
+    color: red;
+}
