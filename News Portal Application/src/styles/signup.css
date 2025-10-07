@@ -1,0 +1,68 @@
+/* Base layout */
+body {
+  background-color: black !important;
+  font-family: 'Poppins', sans-serif;
+  color: white !important;
+}
+section.main {
+  background-color: #000 !important;
+  padding: 2em;
+}
+
+/* App container fallback */
+div[data-testid="stAppViewContainer"] {
+  background-color: #000 !important;
+}
+/* Headings */
+h1, h2 {
+  color: #e62c2c !important;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  color: #ccc !important;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Input fields */
+input[type="text"], input[type="email"], input[type="password"] {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: rgb(17, 4, 4) !important;
+  border: 2px solid red !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+}
+
+/* Buttons */
+.stButton > button {
+  background-color: red !important;
+  color: black !important;
+  font-weight: bold !important;
+  border: none !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+
+.stButton > button:hover {
+  background-color: white !important;
+  color: red !important;
+  box-shadow: 0 0 10px red;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #222;
+}

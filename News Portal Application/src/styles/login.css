@@ -1,0 +1,80 @@
+/* Base layout */
+body {
+  background-color: black !important;
+  color: white !important;
+  font-family: 'Poppins', sans-serif;
+}
+/* Streamlit main container */
+section.main {
+  background-color: #000 !important;
+  padding: 2em;
+}
+
+/* App container fallback */
+div[data-testid="stAppViewContainer"] {
+  background-color: #000 !important;
+}
+/* Headings */
+h1, h2 {
+  color: #f4efef !important;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+  color: #ccc !important;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Input fields */
+input[type="text"], input[type="password"] {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: rgb(15, 10, 10) !important;
+  border: 1px solid #e62c2c !important;
+  padding: 10px !important;
+  border-radius: 6px !important;
+  width: 100% !important;
+}
+
+/* Buttons */
+.stButton > button {
+  background-color: #e62c2c !important;
+  color: black !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  font-weight: bold !important;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+}
+
+.stButton > button:hover {
+  background-color: white !important;
+  color: #e62c2c !important;
+  box-shadow: 0 0 10px #e62c2c;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e62c2c;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stMarkdown, .stButton > button, h1, p {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+

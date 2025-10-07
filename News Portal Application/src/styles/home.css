@@ -1,0 +1,90 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+section.main, div[data-testid="stAppViewContainer"] {
+  background-color: #000 !important;
+  padding: 2em;
+}
+
+h1, h2, h3 {
+  color: #f8f2f2 !important;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+p, li, span, div {
+  color: #fff !important;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.stMarkdown {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.stButton > button {
+  background-color: #e62c2c !important;
+  color: #000 !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  border-radius: 8px !important;
+  font-weight: bold !important;
+  transition: 0.3s ease-in-out !important;
+  width: 100% !important;
+  box-shadow: 0 0 5px #e62c2c;
+}
+
+.stButton > button:hover {
+  background-color: #fff !important;
+  color: #e62c2c !important;
+  box-shadow: 0 0 15px #e62c2c;
+  transform: scale(1.02);
+}
+
+input, textarea {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #fff !important;
+  border: 1px solid #e62c2c !important;
+  padding: 0.5em !important;
+  border-radius: 6px !important;
+  width: 100% !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e62c2c;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #222;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stMarkdown, .stButton > button, h1, p {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.navbar-welcome {
+  font-size: 18px;
+  color: #e62222;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #050404;
+  border-radius: 6px;
+}
