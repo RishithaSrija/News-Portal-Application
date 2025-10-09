@@ -36,3 +36,21 @@ h2 {
 .stMarkdown, .stButton > button, h1, p {
   animation: fadeIn 0.6s ease-in-out;
 }
+button {
+    background-color: #111 !important;
+    color: white !important;
+    border: 2px solid red !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    margin-top: 10px !important;
+    box-shadow: 0 0 10px red !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: red !important;
+    color: #111 !important;
+    box-shadow: 0 0 15px red !important;
+}
